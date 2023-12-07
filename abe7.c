@@ -3,17 +3,18 @@
 
 int main()
 {
-    int a = 390;
-    int b = 273;
-    int q = 1;
-    int r = a - (b * q);
+    int a = 8177;
+    int b = 3315;
+    int q = a / b;
+    int r = a % b;
     while (r != 0)
     {
-        b = a;
-        a = r;
-        q++;
-        r = a - (b * q);
+        a = b;
+        b = r;
+        q = a / b;
+        r = a % b;
     }
     printf("a = %d, b = %d, q = %d, r = %d\n", a, b, q, r);
+    printf("よってあまりは%d", b);
     return 0;
 }
